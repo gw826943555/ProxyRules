@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
+
     - name: Checkout
       uses: actions/checkout@master
 
@@ -21,14 +23,7 @@ jobs:
 
     - name: commit list
       run: |
-        git add -A
-        git diff HEAD --exit-code
-        if ($LASTEXITCODE -eq 0) {
-          Write-Host "No changes to commit!"
-        } else {
-          git config --global user.name "william[bot]"
-          git config --global user.email "gw826943555@qq.com"
-          git commit -m "Updated list on $(date -I)"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git push origin master
-        }
+        git config --global user.name 'william[bot]'
+        git config --global user.email 'gw826943555@qq.com'
+        git commit -am "Automated Update on $(date -I)"
+        git push
