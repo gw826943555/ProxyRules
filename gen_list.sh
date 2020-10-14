@@ -4,11 +4,13 @@
 BYPASS_IPv4_URL="https://raw.githubusercontent.com/herrbischoff/country-ip-blocks/master/ipv4/cn.cidr"
 BYPASS_IPv6_URL="https://raw.githubusercontent.com/herrbischoff/country-ip-blocks/master/ipv6/cn.cidr"
 FORWARD_IPs_URL="https://raw.githubusercontent.com/SteamedFish/gfwiplist/master/gfwiplist.txt"
+BYPASS_NET_URL="https://raw.githubusercontent.com/pluwen/china-domain-allowlist/master/allow-list.sorl"
 FORWARD_NET_URL="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"
 
 # file
 DST_IPS_BYPASS_FILE="./dst_ips.bypass"
 DST_IPS_FORWARD_FILE="./dst_ips.forward"
+DST_NET_BYPASS_FILE="./dst_net.bypass"
 DST_NET_DORWARD_FILE="./dst_net.forward"
 
 generate_net_list() {
@@ -39,6 +41,10 @@ wget $FORWARD_IPs_URL -O $DST_IPS_FORWARD_FILE
 # 获取需要代理的域名表
 wget $FORWARD_NET_URL -O ./tmp.txt
 generate_net_list ./tmp.txt > $DST_NET_DORWARD_FILE
+
+# 获取不需要代理的与名表
+wget $BYPASS_NET_URL -O ./tmp.txt
+cat ./tmp.txt | sed '/^[^*]/d' > $DST_NET_BYPASS_FILE
 
 #清理临时文件
 rm -f ./tmp.txt

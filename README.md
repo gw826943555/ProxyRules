@@ -16,9 +16,10 @@
 * 来源：https://github.com/gfwlist/gfwlist.git
 * 说明：需要强制走代理的域名列表，配合DNS解析软件使用
 
-
-
-
+# 不走代理的域名
+* 文件名：dst_net.bypass
+* 来源：https://github.com/pluwen/china-domain-allowlist.git
+* 说明：不需要强制走代理的域名列表，国内域名表
 
 ## License
 
