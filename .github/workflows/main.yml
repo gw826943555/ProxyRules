@@ -23,7 +23,7 @@ jobs:
 
     - name: commit list
       run: |
-        git config --global user.name 'william[bot]'
-        git config --global user.email 'gw826943555@qq.com'
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git commit -am "Automated Update on $(date -I)"
         git push
