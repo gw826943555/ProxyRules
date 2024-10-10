@@ -190,6 +190,7 @@
 *.biliapi.net
 *.bilibili.com
 *.bilibili.tv
+*.bilicomic.com
 *.biligame.com
 *.biligame.net
 *.bilivideo.com
@@ -539,6 +540,7 @@
 *.jdkindle.com
 *.jdpay.com
 *.jetbrains.com
+*.jfdaily.com
 *.jfrft.com
 *.jhdec.com
 *.jianguoyun.com
@@ -947,7 +949,6 @@
 *.steamcn.com
 *.steamcontent.com
 *.steamdb.info
-*.steamstatic.com
 *.subhd.tv
 *.sui.com
 *.suning.com
