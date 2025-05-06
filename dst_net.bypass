@@ -338,6 +338,9 @@
 *.doubanio.com
 *.doubleclick.net
 *.douyin.com
+*.douyincdn.com
+*.douyinliving.com
+*.douyinvod.com
 *.douyu.com
 *.douyutv.com
 *.doyoo.net
@@ -547,6 +550,7 @@
 *.iteye.com
 *.ithome.com
 *.itjuzi.com
+*.ixigua.com
 *.jandan.net
 *.java.com
 *.javaeye.com
@@ -715,6 +719,7 @@
 *.mgtv.com
 *.mi-img.com
 *.mi.com
+*.mianshiya.com
 *.miaopai.com
 *.microbit.org
 *.midifan.com
@@ -997,6 +1002,7 @@
 *.tcl.com
 *.teambition.com
 *.teamviewer.com
+*.teandy.com
 *.tencent-cloud.com
 *.tencent-cloud.net
 *.tencent.com
